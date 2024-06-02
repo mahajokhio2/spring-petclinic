@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/<your-username>/spring-petclinic.git', branch: 'main'
+                git url: 'https://github.com/mahajokhio2/spring-petclinic.git', branch: 'main'
             }
         }
 
@@ -42,7 +42,7 @@ pipeline {
         stage('Release to Production') {
             steps {
                 script {
-                    docker.build('spring-petclinic').push('your-dockerhub-username/spring-petclinic:latest')
+                    docker.build('spring-petclinic').push('mahajokhio2/spring-petclinic:latest')
                 }
             }
         }
@@ -64,3 +64,4 @@ pipeline {
         }
     }
 }
+
