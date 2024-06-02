@@ -36,7 +36,7 @@ can be found at https://github.com/newrelic/.
 
 ## ASM
 This product includes [ASM](https://asm.ow2.io), which is released under the following license(s):
-    ASM (BSD-3) <http://asm.ow2.org/license.html>
+    ASM (BSD-3) <https://asm.ow2.org/license.html>
     
 ```
 ASM: a very small and fast Java bytecode manipulation framework
@@ -70,63 +70,63 @@ THE POSSIBILITY OF SUCH DAMAGE.
 
 ## Apache Commons CLI
 This product includes [Apache Commons CLI](https://commons.apache.org/proper/commons-cli/), which is released under the following license(s):
-    Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>
+    Apache License 2.0 <https://www.apache.org/licenses/LICENSE-2.0>
 
 ```
  Apache Commons CLI
  Copyright 2001-2017 The Apache Software Foundation
  
  This product includes software developed at
- The Apache Software Foundation (http://www.apache.org/).
+ The Apache Software Foundation (https://www.apache.org/).
 ```
 
 ## Apache Commons Codec
-This product includes [Apache Commons Codec](http://commons.apache.org/proper/commons-codec/), which is released under the following license(s):
-    Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>
+This product includes [Apache Commons Codec](https://commons.apache.org/proper/commons-codec/), which is released under the following license(s):
+    Apache License 2.0 <https://www.apache.org/licenses/LICENSE-2.0>
 
 ```
 Apache Commons Codec
 Copyright 2002-2017 The Apache Software Foundation
 
 This product includes software developed at
-The Apache Software Foundation (http://www.apache.org/).
+The Apache Software Foundation (https://www.apache.org/).
 
 src/test/org/apache/commons/codec/language/DoubleMetaphoneTest.java
-contains test data from http://aspell.net/test/orig/batch0.tab.
+contains test data from https://aspell.net/test/orig/batch0.tab.
 Copyright (C) 2002 Kevin Atkinson (kevina@gnu.org)
 
 ===============================================================================
 
 The content of package org.apache.commons.codec.language.bm has been translated
-from the original php source code available at http://stevemorse.org/phoneticinfo.htm
+from the original php source code available at https://stevemorse.org/phoneticinfo.htm
 with permission from the original authors.
 Original source copyright:
 Copyright (c) 2008 Alexander Beider & Stephen P. Morse.
 ```
 
 ## Apache Commons Lang
-This product includes [Apache Commons Lang](http://commons.apache.org/proper/commons-lang/), which is released under the following license(s):
-    Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>
+This product includes [Apache Commons Lang](https://commons.apache.org/proper/commons-lang/), which is released under the following license(s):
+    Apache License 2.0 <https://www.apache.org/licenses/LICENSE-2.0>
 
 ```
 Apache Commons Lang
 Copyright 2001-2018 The Apache Software Foundation
 
 This product includes software developed at
-The Apache Software Foundation (http://www.apache.org/).
+The Apache Software Foundation (https://www.apache.org/).
 ```
 
 
 ## Apache Commons Logging
-This product includes [Apache Commons Logging](http://commons.apache.org/proper/commons-logging/), which is released under the following license(s):
-    Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>
+This product includes [Apache Commons Logging](https://commons.apache.org/proper/commons-logging/), which is released under the following license(s):
+    Apache License 2.0 <https://www.apache.org/licenses/LICENSE-2.0>
 
 ```
 Apache Commons Logging
 Copyright 2003-2014 The Apache Software Foundation
 
 This product includes software developed at
-The Apache Software Foundation (http://www.apache.org/).
+The Apache Software Foundation (https://www.apache.org/).
 ```
 
 ## Caffeine
@@ -137,7 +137,7 @@ This product includes [Caffeine](https://github.com/ben-manes/caffeine), which i
 
                                  Apache License
                            Version 2.0, January 2004
-                        http://www.apache.org/licenses/
+                        https://www.apache.org/licenses/
 
    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
@@ -329,7 +329,7 @@ This product includes [Caffeine](https://github.com/ben-manes/caffeine), which i
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -372,7 +372,7 @@ This product includes [Guava](https://github.com/google/guava), which is release
 ```
                                  Apache License
                            Version 2.0, January 2004
-                        http://www.apache.org/licenses/
+                        https://www.apache.org/licenses/
 
    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
@@ -564,7 +564,7 @@ This product includes [Guava](https://github.com/google/guava), which is release
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -582,11 +582,11 @@ Apache HttpClient
 Copyright 1999-2019 The Apache Software Foundation
 
 This product includes software developed at
-The Apache Software Foundation (http://www.apache.org/).
+The Apache Software Foundation (https://www.apache.org/).
 ```
 
 ## JRegex
-This product includes [JRegex](http://jregex.sourceforge.net/), which is released under the following license(s):
+This product includes [JRegex](https://jregex.sourceforge.net/), which is released under the following license(s):
     BSD-3 <https://www.telit.com/securewise-eula/jregex-license/>
     
 ```
@@ -617,7 +617,7 @@ This product includes [JSON.simple](https://github.com/fangyidong/json-simple), 
 ```
                                  Apache License
                            Version 2.0, January 2004
-                        http://www.apache.org/licenses/
+                        https://www.apache.org/licenses/
 
    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
@@ -809,7 +809,7 @@ This product includes [JSON.simple](https://github.com/fangyidong/json-simple), 
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -827,7 +827,7 @@ Apache Log4j Core
 Copyright 1999-2012 Apache Software Foundation
 
 This product includes software developed at
-The Apache Software Foundation (http://www.apache.org/).
+The Apache Software Foundation (https://www.apache.org/).
 
 ResolverUtil.java
 Copyright 2005-2006 Tim Fennell
@@ -835,7 +835,7 @@ Copyright 2005-2006 Tim Fennell
 
 ## SLF4J
 This product includes [SLF4J](https://www.slf4j.org/), which is released under the following license(s):
-    The MIT License (MIT) <http://opensource.org/licenses/MIT>
+    The MIT License (MIT) <https://opensource.org/licenses/MIT>
  
  ```
  Copyright (c) 2004-2017 QOS.ch All rights reserved. 
@@ -865,7 +865,7 @@ This product includes [SnakeYAML](https://bitbucket.org/asomov/snakeyaml), which
 ```
                                  Apache License
                            Version 2.0, January 2004
-                        http://www.apache.org/licenses/
+                        https://www.apache.org/licenses/
 
    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
@@ -1057,7 +1057,7 @@ This product includes [SnakeYAML](https://bitbucket.org/asomov/snakeyaml), which
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -1069,7 +1069,7 @@ This product includes [SnakeYAML](https://bitbucket.org/asomov/snakeyaml), which
 ## Gson
 
 This product includes 'Gson', which is released under the following license(s):
-    Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>
+    Apache License 2.0 <https://www.apache.org/licenses/LICENSE-2.0>
     
 ```
 Copyright 2008 Google Inc.
@@ -1078,7 +1078,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -1089,7 +1089,7 @@ limitations under the License.
 
 ## gRPC
 This product includes 'gRPC', which is released under the following license(s):
-    Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>
+    Apache License 2.0 <https://www.apache.org/licenses/LICENSE-2.0>
     
 ```
 Copyright 2014 The gRPC Authors
@@ -1098,7 +1098,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-    http://www.apache.org/licenses/LICENSE-2.0
+    https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -1145,12 +1145,12 @@ an open source universal data plane API, which can be obtained at:
 ## Harmony
 
 This product includes 'Apache Harmony', which is released under the following license(s):
-    Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>
+    Apache License 2.0 <https://www.apache.org/licenses/LICENSE-2.0>
 
 ```
                                  Apache License
                            Version 2.0, January 2004
-                        http://www.apache.org/licenses/
+                        https://www.apache.org/licenses/
 
    TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
 
@@ -1342,7 +1342,7 @@ This product includes 'Apache Harmony', which is released under the following li
    you may not use this file except in compliance with the License.
    You may obtain a copy of the License at
 
-       http://www.apache.org/licenses/LICENSE-2.0
+       https://www.apache.org/licenses/LICENSE-2.0
 
    Unless required by applicable law or agreed to in writing, software
    distributed under the License is distributed on an "AS IS" BASIS,
@@ -1353,7 +1353,7 @@ This product includes 'Apache Harmony', which is released under the following li
 
 ## Netty
 This product includes 'Netty', which is released under the following license(s):
-    Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>
+    Apache License 2.0 <https://www.apache.org/licenses/LICENSE-2.0>
 
 ```
                             The Netty Project
@@ -1369,7 +1369,7 @@ The Netty Project licenses this file to you under the Apache License,
 version 2.0 (the "License"); you may not use this file except in compliance
 with the License. You may obtain a copy of the License at:
 
-  http://www.apache.org/licenses/LICENSE-2.0
+  https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
@@ -1388,8 +1388,8 @@ been derived from the works by JSR-166 EG, Doug Lea, and Jason T. Greene:
   * LICENSE:
     * license/LICENSE.jsr166y.txt (Public Domain)
   * HOMEPAGE:
-    * http://gee.cs.oswego.edu/cgi-bin/viewcvs.cgi/jsr166/
-    * http://viewvc.jboss.org/cgi-bin/viewvc.cgi/jbosscache/experimental/jsr166/
+    * https://gee.cs.oswego.edu/cgi-bin/viewcvs.cgi/jsr166/
+    * https://viewvc.jboss.org/cgi-bin/viewvc.cgi/jbosscache/experimental/jsr166/
 
 This product contains a modified version of Robert Harder's Public Domain
 Base64 Encoder and Decoder, which can be obtained at:
@@ -1397,7 +1397,7 @@ Base64 Encoder and Decoder, which can be obtained at:
   * LICENSE:
     * license/LICENSE.base64.txt (Public Domain)
   * HOMEPAGE:
-    * http://iharder.sourceforge.net/current/java/base64/
+    * https://iharder.sourceforge.net/current/java/base64/
 
 This product contains a modified portion of 'Webbit', an event based
 WebSocket and HTTP server, which can be obtained at:
@@ -1413,7 +1413,7 @@ facade for Java, which can be obtained at:
   * LICENSE:
     * license/LICENSE.slf4j.txt (MIT License)
   * HOMEPAGE:
-    * http://www.slf4j.org/
+    * https://www.slf4j.org/
 
 This product contains a modified portion of 'Apache Harmony', an open source
 Java SE, which can be obtained at:
@@ -1423,7 +1423,7 @@ Java SE, which can be obtained at:
   * LICENSE:
     * license/LICENSE.harmony.txt (Apache License 2.0)
   * HOMEPAGE:
-    * http://archive.apache.org/dist/harmony/
+    * https://archive.apache.org/dist/harmony/
 
 This product contains a modified portion of 'jbzip2', a Java bzip2 compression
 and decompression library written by Matthew J. Francis. It can be obtained at:
@@ -1456,7 +1456,7 @@ pure Java, which can be obtained at:
   * LICENSE:
     * license/LICENSE.jzlib.txt (BSD style License)
   * HOMEPAGE:
-    * http://www.jcraft.com/jzlib/
+    * https://www.jcraft.com/jzlib/
 
 This product optionally depends on 'Compress-LZF', a Java library for encoding and
 decoding data in LZF format, written by Tatu Saloranta. It can be obtained at:
@@ -1505,7 +1505,7 @@ equivalent functionality.  It can be obtained at:
   * LICENSE:
     * license/LICENSE.bouncycastle.txt (MIT License)
   * HOMEPAGE:
-    * http://www.bouncycastle.org/
+    * https://www.bouncycastle.org/
 
 This product optionally depends on 'Snappy', a compression library produced
 by Google Inc, which can be obtained at:
@@ -1537,7 +1537,7 @@ framework, which can be obtained at:
   * LICENSE:
     * license/LICENSE.commons-logging.txt (Apache License 2.0)
   * HOMEPAGE:
-    * http://commons.apache.org/logging/
+    * https://commons.apache.org/logging/
 
 This product optionally depends on 'Apache Log4J', a logging framework, which
 can be obtained at:
@@ -1545,7 +1545,7 @@ can be obtained at:
   * LICENSE:
     * license/LICENSE.log4j.txt (Apache License 2.0)
   * HOMEPAGE:
-    * http://logging.apache.org/log4j/
+    * https://logging.apache.org/log4j/
 
 This product optionally depends on 'Aalto XML', an ultra-high performance
 non-blocking XML processor, which can be obtained at:
@@ -1553,7 +1553,7 @@ non-blocking XML processor, which can be obtained at:
   * LICENSE:
     * license/LICENSE.aalto-xml.txt (Apache License 2.0)
   * HOMEPAGE:
-    * http://wiki.fasterxml.com/AaltoHome
+    * https://wiki.fasterxml.com/AaltoHome
 
 This product contains a modified version of 'HPACK', a Java implementation of
 the HTTP/2 HPACK algorithm written by Twitter. It can be obtained at:
@@ -1602,7 +1602,7 @@ This private header is also used by Apple's open source
  * LICENSE:
     * license/LICENSE.dnsinfo.txt (Apache License 2.0)
   * HOMEPAGE:
-    * http://www.opensource.apple.com/source/configd/configd-453.19/dnsinfo/dnsinfo.h
+    * https://www.opensource.apple.com/source/configd/configd-453.19/dnsinfo/dnsinfo.h
 ```
 
 ## New Relic Security Agent
@@ -1680,7 +1680,7 @@ terms of the license covering any OSS component, the source code can be requeste
 ## OkHttp
 
 This product includes 'OkHttp', which is released under the following license(s):
-    Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>
+    Apache License 2.0 <https://www.apache.org/licenses/LICENSE-2.0>
 
 ```
 Copyright 2019 Square, Inc.
@@ -1689,7 +1689,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-   http://www.apache.org/licenses/LICENSE-2.0
+   https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -1701,7 +1701,7 @@ limitations under the License.
 ## Okio
 
 This product includes 'Okio', which is released under the following license(s):
-    Apache License 2.0 <http://www.apache.org/licenses/LICENSE-2.0>
+    Apache License 2.0 <https://www.apache.org/licenses/LICENSE-2.0>
 
 ```
 Copyright 2013 Square, Inc.
@@ -1710,7 +1710,7 @@ Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-   http://www.apache.org/licenses/LICENSE-2.0
+   https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
