@@ -1,6 +1,11 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'Maven'  // Ensure Maven is installed and configured in Jenkins
+        jdk 'JDK11'    // Ensure JDK 11 is installed and configured in Jenkins
+    }
+
     stages {
         stage('Checkout') {
             steps {
@@ -23,10 +28,10 @@ pipeline {
         stage('Code Quality Analysis') {
             steps {
                 script {
-                    def scannerHome = tool 'SonarQubeScanner'
-                    withSonarQubeEnv('SonarQube') {
-                        sh "${scannerHome}/bin/sonar-scanner"
-                    }
+                    def pmdHome = tool name: 'PMD', type: 'hudson.plugins.pmd.PmdToolInstallation'
+                    sh """
+                        java -cp ${pmdHome}/lib/* net.sourceforge.pmd.PMD -d src/main/java -R rulesets/java/quickstart.xml -f text -r pmd_report.txt
+                    """
                 }
             }
         }
@@ -64,4 +69,5 @@ pipeline {
         }
     }
 }
+
 
