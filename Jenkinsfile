@@ -1,11 +1,6 @@
 pipeline {
     agent any
 
-    tools {
-        maven 'Maven'  // Ensure Maven is installed and configured in Jenkins
-        jdk 'JDK11'    // Ensure JDK 11 is installed and configured in Jenkins
-    }
-
     environment {
         SONAR_HOST_URL = 'https://sonarcloud.io'
         SONAR_ORGANIZATION = 'mahajokhio2'
