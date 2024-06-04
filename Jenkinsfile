@@ -2,17 +2,19 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven3'  // Ensure Maven is installed and configured in Jenkins
+        maven 'Maven3' 
     }
 
     environment {
-        JAVA_HOME = '/Users/mahajokhio/.sdkman/candidates/java/19.0.2-open' // Set the correct path to your Java 19 installation
+        JAVA_HOME = '/Users/mahajokhio/.sdkman/candidates/java/19.0.2-open' 
         PATH = "${JAVA_HOME}/bin:/usr/local/bin:${env.PATH}"
         SONAR_HOST_URL = 'https://sonarcloud.io'
         SONAR_ORGANIZATION = 'mahajokhio2'
         SONAR_PROJECT_KEY = 'mahajokhio2_spring-petclinic'
         DOCKER_PATH = "/usr/local/bin"
         DOCKER_IMAGE = 'mahajokhio2/spring-petclinic'
+        DOCKER_USERNAME = 'mahajokhio' 
+        DOCKER_PASSWORD = 'mahaj1234567.' 
     }
 
     stages {
@@ -54,12 +56,12 @@ pipeline {
         stage('Release to Production') {
             steps {
                 script {
-                    docker.withRegistry('', 'dockerhub-credentials') {
-                        def image = docker.build("${DOCKER_IMAGE}")
-                        image.tag('latest')
-                        image.push('latest')
-                        image.push("${env.BUILD_ID}")
-                    }
+                    sh "echo ${DOCKER_PASSWORD} | docker login -u ${DOCKER_USERNAME} --password-stdin"
+                    def image = docker.build("${DOCKER_IMAGE}")
+                    image.tag('latest')
+                    image.push('latest')
+                    image.push("${env.BUILD_ID}")
+                    sh 'docker logout'
                 }
             }
         }
@@ -81,4 +83,3 @@ pipeline {
         }
     }
 }
-
