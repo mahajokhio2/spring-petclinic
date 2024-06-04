@@ -12,6 +12,7 @@ pipeline {
         SONAR_ORGANIZATION = 'mahajokhio2'
         SONAR_PROJECT_KEY = 'mahajokhio2_spring-petclinic'
         DOCKER_PATH = "/usr/local/bin"
+        DOCKER_IMAGE = 'mahajokhio2/spring-petclinic'
     }
 
     stages {
@@ -44,7 +45,8 @@ pipeline {
         stage('Deploy to Staging') {
             steps {
                 script {
-                    docker.build('spring-petclinic').run('-d -p 8080:8080')
+                    def image = docker.build("${DOCKER_IMAGE}")
+                    image.run('-d -p 8080:8080')
                 }
             }
         }
@@ -52,7 +54,12 @@ pipeline {
         stage('Release to Production') {
             steps {
                 script {
-                    docker.build('spring-petclinic').push('mahajokhio2/spring-petclinic:latest')
+                    docker.withRegistry('', 'dockerhub-credentials') {
+                        def image = docker.build("${DOCKER_IMAGE}")
+                        image.tag('latest')
+                        image.push('latest')
+                        image.push("${env.BUILD_ID}")
+                    }
                 }
             }
         }
@@ -74,3 +81,4 @@ pipeline {
         }
     }
 }
+
