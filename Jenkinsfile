@@ -2,6 +2,8 @@ pipeline {
     agent any
 
     environment {
+        JAVA_HOME = '/Users/mahajokhio/.sdkman/candidates/java/19.0.2-open' // Set the correct path to your Java 19 installation
+        PATH = "${JAVA_HOME}/bin:${env.PATH}"
         SONAR_HOST_URL = 'https://sonarcloud.io'
         SONAR_ORGANIZATION = 'mahajokhio2'
         SONAR_PROJECT_KEY = 'mahajokhio2_spring-petclinic'
