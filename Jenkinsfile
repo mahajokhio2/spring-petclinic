@@ -2,19 +2,19 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven3' 
+        maven 'Maven3'  // Ensure Maven is installed and configured in Jenkins
     }
 
     environment {
-        JAVA_HOME = '/Users/mahajokhio/.sdkman/candidates/java/19.0.2-open' 
+        JAVA_HOME = '/Users/mahajokhio/.sdkman/candidates/java/19.0.2-open' // Set the correct path to your Java 19 installation
         PATH = "${JAVA_HOME}/bin:/usr/local/bin:${env.PATH}"
         SONAR_HOST_URL = 'https://sonarcloud.io'
         SONAR_ORGANIZATION = 'mahajokhio2'
         SONAR_PROJECT_KEY = 'mahajokhio2_spring-petclinic'
         DOCKER_PATH = "/usr/local/bin"
         DOCKER_IMAGE = 'mahajokhio/spring-petclinic'
-        DOCKER_USERNAME = 'mahajokhio' 
-        DOCKER_PASSWORD = 'mahaj1234567.' 
+        DOCKER_USERNAME = 'mahajokhio'  // Use your actual Docker Hub username
+        DOCKER_PASSWORD = 'your-docker-password'  // Add your Docker Hub password here
     }
 
     stages {
@@ -69,7 +69,7 @@ pipeline {
         stage('Monitoring and Alerting') {
             steps {
                 script {
-                    withCredentials([string(credentialsId: 'newrelic-api-key', variable: 'NEWRELIC_API_KEY')]) {
+                    withCredentials([usernamePassword(credentialsId: 'newrelic-api-key', usernameVariable: 'DUMMY_USERNAME', passwordVariable: 'NEWRELIC_API_KEY')]) {
                         sh '''
                         curl -X POST "https://api.newrelic.com/v2/applications.json" \
                         -H "X-Api-Key:${NEWRELIC_API_KEY}" -i \
@@ -82,4 +82,6 @@ pipeline {
             }
         }
     }
+}
+
 }
