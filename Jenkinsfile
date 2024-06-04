@@ -12,7 +12,7 @@ pipeline {
         SONAR_ORGANIZATION = 'mahajokhio2'
         SONAR_PROJECT_KEY = 'mahajokhio2_spring-petclinic'
         DOCKER_PATH = "/usr/local/bin"
-        DOCKER_IMAGE = 'mahajokhio2/spring-petclinic'
+        DOCKER_IMAGE = 'mahajokhio/spring-petclinic'
         DOCKER_USERNAME = 'mahajokhio' 
         DOCKER_PASSWORD = 'mahaj1234567.' 
     }
