@@ -13,8 +13,6 @@ pipeline {
         SONAR_PROJECT_KEY = 'mahajokhio2_spring-petclinic'
         DOCKER_PATH = "/usr/local/bin"
         DOCKER_IMAGE = 'mahajokhio/spring-petclinic'
-        DOCKER_USERNAME = 'mahajokhio'  // Use your actual Docker Hub username
-        DOCKER_PASSWORD = 'your-docker-password'  // Add your Docker Hub password here
     }
 
     stages {
@@ -56,12 +54,14 @@ pipeline {
         stage('Release to Production') {
             steps {
                 script {
-                    sh "echo ${DOCKER_PASSWORD} | docker login -u ${DOCKER_USERNAME} --password-stdin"
-                    def image = docker.build("${DOCKER_IMAGE}")
-                    image.tag('latest')
-                    image.push('latest')
-                    image.push("${env.BUILD_ID}")
-                    sh 'docker logout'
+                    withCredentials([usernamePassword(credentialsId: 'dockerhub-credentials', usernameVariable: 'DOCKER_USERNAME', passwordVariable: 'DOCKER_PASSWORD')]) {
+                        sh "echo ${DOCKER_PASSWORD} | docker login -u ${DOCKER_USERNAME} --password-stdin"
+                        def image = docker.build("${DOCKER_IMAGE}")
+                        image.tag('latest')
+                        image.push('latest')
+                        image.push("${env.BUILD_ID}")
+                        sh 'docker logout'
+                    }
                 }
             }
         }
@@ -84,4 +84,3 @@ pipeline {
     }
 }
 
-}
