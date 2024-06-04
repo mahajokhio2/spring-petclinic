@@ -2,11 +2,11 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven3'  
+        maven 'Maven3'  // Ensure Maven is installed and configured in Jenkins
     }
 
     environment {
-        JAVA_HOME = '/Users/mahajokhio/.sdkman/candidates/java/19.0.2-open' 
+        JAVA_HOME = '/Users/mahajokhio/.sdkman/candidates/java/19.0.2-open' // Set the correct path to your Java 19 installation
         PATH = "${JAVA_HOME}/bin:/usr/local/bin:${env.PATH}"
         SONAR_HOST_URL = 'https://sonarcloud.io'
         SONAR_ORGANIZATION = 'mahajokhio2'
@@ -74,4 +74,3 @@ pipeline {
         }
     }
 }
-
