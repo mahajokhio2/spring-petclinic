@@ -6,6 +6,12 @@ pipeline {
         jdk 'JDK11'    // Ensure JDK 11 is installed and configured in Jenkins
     }
 
+    environment {
+        SONAR_HOST_URL = 'https://sonarcloud.io'
+        SONAR_ORGANIZATION = 'mahajokhio2'
+        SONAR_PROJECT_KEY = 'mahajokhio2_spring-petclinic'
+    }
+
     stages {
         stage('Checkout') {
             steps {
@@ -25,13 +31,10 @@ pipeline {
             }
         }
 
-        stage('Code Quality Analysis') {
+        stage('SonarCloud Analysis') {
             steps {
-                script {
-                    def pmdHome = tool name: 'PMD', type: 'hudson.plugins.pmd.PmdToolInstallation'
-                    sh """
-                        java -cp ${pmdHome}/lib/* net.sourceforge.pmd.PMD -d src/main/java -R rulesets/java/quickstart.xml -f text -r pmd_report.txt
-                    """
+                withSonarQubeEnv('SonarCloud') {
+                    sh 'mvn sonar:sonar -Dsonar.projectKey=${SONAR_PROJECT_KEY} -Dsonar.organization=${SONAR_ORGANIZATION} -Dsonar.host.url=${SONAR_HOST_URL} -Dsonar.login=$SONAR_TOKEN'
                 }
             }
         }
@@ -69,5 +72,3 @@ pipeline {
         }
     }
 }
-
-
